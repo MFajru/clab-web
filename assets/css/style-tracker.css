@@ -1,1 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+:root {
+  --grey-background: #f7f7f7;
+}
+
+body {
+  font-family: "JetBrains Mono";
+  background-color: var(--grey-background);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.main__title {
+  margin-top: 2rem;
+}
+
+.link__home {
+  font-size: 1.2rem;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 5px 5px 15px grey;
+  padding: 2rem;
+  border-top-right-radius: 4rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 2rem;
+  width: 500px;
+  margin: 3rem 0;
+}
+
+.card__balance__title {
+  font-weight: 600;
+}
+
+.card__balance__body {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
+/* Transaction */
+.transaction {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.transaction__income {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-right-style: solid;
+  border-right-width: 1px;
+  padding-right: 2rem;
+}
+
+.transaction__subtitle {
+  font-weight: 600;
+}
+
+.transaction__expense {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.transaction__balance__expense {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: red;
+}
+
+.transaction__balance__income {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: green;
+}
+
+/* History */
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.history__title {
+  margin-top: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: gray;
+}
+
+.history__item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  height: 40px;
+  margin-top: 0.5rem;
+}
+
+.history__item__head {
+  display: flex;
+}
+
+.history__item__delete {
+  display: none;
+  align-items: center;
+  padding-right: 0.5rem;
+  color: red;
+  font-size: 16px;
+}
+
+.history__item__head__name {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.history__item__head:hover > .history__item__delete {
+  display: flex;
+}
+
+.history__item__amount {
+  display: flex;
+  font-size: 18px;
+}
+
+.history__item__amount__text {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.history__item__amount__bar--red {
+  height: 40px;
+  width: 5px;
+  background-color: red;
+}
+
+.history__item__amount__bar--green {
+  height: 40px;
+  width: 5px;
+  background-color: green;
+}
+
+.history__item__amount__text {
+  display: flex;
+  align-items: center;
+}
+
+/* New Transaction */
+.new-transaction {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-transaction__title {
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: gray;
+}
+
+.new-transaction__form__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input__label {
+  font-size: 18px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form__input__field {
+  height: 35px;
+  padding-left: 0.5rem;
+}
+
+/* Button */
+.btn {
+  margin-top: 1rem;
+  width: 100%;
+  height: 50px;
+  border-style: none;
+  background-color: #2d3146;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.btn--delete {
+  background-color: transparent;
+  border-style: none;
+}
