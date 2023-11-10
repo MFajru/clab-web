@@ -9,6 +9,11 @@ a {
   text-decoration: none !important;
 }
 
+.form-container {
+  margin: auto;
+  width: 70%;
+}
+
 .list-group-item {
   list-style: none !important;
   padding-top: 6px;
@@ -29,6 +34,10 @@ a {
 .py-5a {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+.p-50 {
+  padding-left: 40%;
 }
 
 .bg-custom-red {
@@ -135,6 +144,21 @@ header {
   border-style: solid !important;
 }
 
+.btn--yellow {
+  background-color: #cd7b2e !important;
+  color: white !important;
+}
+
+.btn--google {
+  background-color: white !important;
+  color: black !important;
+}
+
+.btn--brightBlue {
+  background-color: #4c4ddc !important;
+  color: white !important;
+}
+
 /* Responsive */
 @media screen and (min-width: 992px) {
   .w-lg-32 {
@@ -143,5 +167,17 @@ header {
 
   .w-lg-60 {
     width: 60% !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .w-md-30 {
+    width: 30% !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .w-lg-100 {
+    width: 100% !important;
   }
 }
