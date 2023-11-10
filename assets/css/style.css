@@ -51,6 +51,10 @@ a {
   width: 30%;
 }
 
+.w-32 {
+  width: 32%;
+}
+
 .w-40 {
   width: 40%;
 }
@@ -125,4 +129,15 @@ header {
   border: black !important;
   border-width: 1px !important;
   border-style: solid !important;
+}
+
+/* Responsive */
+@media screen and (min-width: 992px) {
+  .w-lg-32 {
+    width: 32% !important;
+  }
+
+  .w-lg-60 {
+    width: 60% !important;
+  }
 }
