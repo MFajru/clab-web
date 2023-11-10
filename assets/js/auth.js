@@ -4,7 +4,7 @@ function submit() {
     email: "",
   };
   newObj.email = elementContent;
-  const localDataJson = localStorage.getItem("data");
+  const localDataJson = localStorage.getItem("user");
   if (!localDataJson) {
     localStorage.setItem("user", JSON.stringify([]));
     return;
