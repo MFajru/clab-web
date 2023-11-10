@@ -86,6 +86,10 @@ header {
   color: #238bea !important;
 }
 
+.nav-pills .nav-link.active {
+  background-color: whitesmoke !important;
+}
+
 /* Carousel */
 #pricing-carousel {
   padding-left: 30%;
